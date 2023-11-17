@@ -31,12 +31,14 @@
       </p>
     </div>
     <div class="container2">
-      <div>
-        <form onsubmit="return false">
+      <div class="msg"></div>
+      <div class="product-form">
+        <form id="productForm">
           <label for="product">Product Name</label>
-          <input type="text" id="product" autocomplete="off" />
-          <input type="submit" onclick="addProduct()" />
+          <input type="text" id="productInput" autocomplete="off" />
+          <input class="btn" type="submit" value="Add Product" />
         </form>
+        <ul id="productList"></ul>
       </div>
       <div id="output"></div>
     </div>
